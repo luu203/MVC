@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une annonce</title>
+    <link rel="stylesheet" type="text/css" href="add_annonce.css">
+    <style>
+        .submit-button {
+            background-color: #4CAF50; /* Couleur verte */
+            color: white; /* Texte en blanc */
+            padding: 12px 24px; /* Espacement autour du texte */
+            border: none;
+            border-radius: 4px; /* Coins arrondis */
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049; /* Changer la couleur au survol */
+        }
+    </style>
+</head>
+<body>
+    <!-- Formulaire pour ajouter une annonce -->
+    <form method="post" action="add_annonce.php" enctype="multipart/form-data">
+        <label for="titre">Titre de l'annonce</label>
+        <input type="text" id="titre" name="titre">
+        
+        <label for="description">Description</label>
+        <textarea id="description" name="description" ></textarea>
+        
+        <label for="category">Catégorie</label>
+        <select id="category" name="category" >
+            <option value="Villa">Villa</option>
+            <option value="Maison">Maison</option>
+            <option value="Appartement">Appartement</option>
+        </select>
+        
+        <label for="contrainte">Contrainte</label>
+        <input type="text" id="contrainte" name="contrainte">
+
+        <label for="image">Image de l'annonce :</label>
+    <input type="file" name="annonce_image" id="annonce_image"><br>
+
+   
+      
+        <!-- Bouton de soumission stylisé -->
+        <button type="submit" class="submit-button">Ajouter une annonce</button>
+    </form>
+</body>
+</html>

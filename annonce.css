@@ -1,0 +1,119 @@
+/* Style général du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal pour le contenu */
+.container {
+    padding: 20px;
+}
+
+/* Structure flexible pour aligner les éléments */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex6 {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteneur des annonces */
+.annonces {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Style des éléments individuels des annonces */
+.annonce-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+/* Effet de survol sur un élément d'annonce */
+.annonce-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre de l'annonce */
+.annonce-item h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description de l'annonce */
+.annonce-item p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Styles des images des annonces */
+.annonce-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet d'agrandissement au survol de l'image */
+.annonce-image:hover {
+    transform: scale(1.05);
+}
+
+/* Bouton de suppression */
+form input[type="submit"], form button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Effet au survol du bouton de suppression */
+form input[type="submit"]:hover, form button:hover {
+    background-color: #e60000;
+}
+
+/* Bouton d'ajout d'annonce */
+a input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Effet au survol du bouton d'ajout */
+a input[type="button"]:hover {
+    background-color: #45a049;
+}

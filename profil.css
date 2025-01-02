@@ -1,0 +1,78 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Titre de la page */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Champs de formulaire */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Bouton Sauvegarder */
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Message de bienvenue */
+.welcome-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

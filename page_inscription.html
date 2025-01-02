@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page_inscription.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Inscription</h2>
+        <form action="controleur_inscription.php" method="post">
+            <label for="username">Nom:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirmer le mot de passe:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="adresse">Adresse:</label>
+            <input type="text" id="adresse" name="adresse">
+
+            <label for="ville">Ville:</label>
+            <input type="text" id="ville" name="ville">
+
+            <label for="code-postal">Code Postal:</label>
+            <input type="number" id="code-postal" name="code-postal">
+
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
